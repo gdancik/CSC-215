@@ -6,4 +6,4 @@ order: 3
 exclude_from_nav: false
 ---
   
-* Assignment #1 
+* [Assignment Set #1]({{ site.baseurl }}/data/hw/csc_assignment_set1.pdf)
