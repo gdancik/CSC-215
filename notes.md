@@ -10,4 +10,4 @@ exclude_from_nav: false
     * [Lake Tahanna example]({{ site.baseurl }}/data/notes/tahanna.zip)
 * Revealing text or images with advanced CSS
     * [reveal.html]({{ site.baseurl }}/data/notes/reveal.html) 
-    * [Jared Adam's Adventure Travel site]({{ site.baseurl }}/date/notes/jaredadam.zip) 
+    * [Jared Adam's Adventure Travel site]({{ site.baseurl }}/data/notes/jaredadam.zip) 
