@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title> New User </title>    
+
+<script>
+function processForm() {
+
+    var user = document.getElementsByName("user")[0].value;
+    var password = document.getElementsByName("password")[0].value;
+    var gender = document.getElementsByName("gender")[0].value;
+
+    if (user.length < 3) {
+        alert("Invalid username: Username must be at least 4 characters long");
+    } else if (password.length < 5) {
+        alert("Invalid password: Password must be at least 6 characters long");
+    }else if (user != "") {
+    alert("Account created for: " + user);
+    } 
+}
+</script>
+
+<style>
+    h2 {color:darkblue; }
+    .required {color:red; }
+    input {padding: 8px 15px 8px 15px;}
+    select {height: 30px; background: transparent}
+ 
+    input[type=submit], input[type=Reset]{
+        background: #4B99AD;
+        background: darkblue;
+        padding: 8px 15px 8px 15px;
+        border: none;
+        color: #fff;
+    }
+
+    input[type=Reset]{
+        background: darkred;
+    }
+</style>
+</head>
+
+<body>
+<p></p>
+
+<form action="" onsubmit = "processForm(); return false;" method = "post">
+</form>
+
+</body>
+</html>
