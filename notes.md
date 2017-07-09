@@ -11,3 +11,8 @@ exclude_from_nav: false
 * Revealing text or images with advanced CSS
     * [reveal.html]({{ site.baseurl }}/data/notes/reveal.html) 
     * [Jared Adam's Adventure Travel site]({{ site.baseurl }}/data/notes/jaredadam.zip) 
+* Advanced Topics and Javascript
+    * [Notes]({{ site.baseurl }}/data/notes/AdvancedTopics.pdf) 
+    * [javascript.html]({{ site.baseurl }}/data/notes/javascript.html) 
+    * [background.html]({{ site.baseurl }}/data/notes/background.html) 
+    * [cookie.html]({{ site.baseurl }}/data/notes/cookie.html) 

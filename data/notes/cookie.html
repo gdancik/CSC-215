@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+// get cookie information
+function getCookie(c_name) {
+  var c_value = document.cookie;
+  var c_start = c_value.indexOf(" " + c_name + "=");
+  if (c_start == -1) {
+    c_start = c_value.indexOf(c_name + "=");
+  }
+  if (c_start == -1) {
+    c_value = null;
+  } else {
+    c_start = c_value.indexOf("=", c_start) + 1;
+    var c_end = c_value.indexOf(";", c_start);
+    if (c_end == -1) {
+        c_end = c_value.length;
+    }
+    c_value = unescape(c_value.substring(c_start,c_end));
+  }
+  return c_value;
+}
+
+// set cookie information 
+function setCookie(c_name,value,exdays) {
+  var exdate=new Date();
+  exdate.setDate(exdate.getDate() + exdays);
+  var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+  document.cookie=c_name + "=" + c_value;
+}
+
+// check current cookie value
+function checkCookie() {
+  var username=getCookie("username");
+  var count=getCookie("count");
+  if (username!=null && username!="") {
+    document.getElementById("welcome").innerHTML= "Welcome back " + username;
+    count = Number(count)+1;
+    document.getElementById("visit").innerHTML="Visit #: " + count;
+    ss = count / 2 +"em";
+    document.getElementById("visit").style.color="blue";
+    document.getElementById("visit").style.fontSize=ss;
+    setCookie("count", count, 365);
+  } else {
+    username=prompt("Please enter your name:","");
+    if (username!=null && username!="") {
+        setCookie("username",username,365);
+	    setCookie("count", 1, 365);
+    }
+    document.getElementById("welcome").innerHTML= "Welcome " + username;
+  }
+}
+</script>
+</head>
+<body onload="checkCookie()">
+    
+<h1 id = "welcome"> Welcome to my Webpage </h1>
+    
+<p id = "visit"> </p>
+
+</body>
+</html>
