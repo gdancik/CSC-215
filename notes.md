@@ -15,4 +15,6 @@ exclude_from_nav: false
     * [Notes]({{ site.baseurl }}/data/notes/AdvancedTopics.pdf) 
     * [javascript.html]({{ site.baseurl }}/data/notes/javascript.html) 
     * [background.html]({{ site.baseurl }}/data/notes/background.html) 
+    * [W3 Schools Javascript Intro](https://www.w3schools.com/js/js_intro.asp) 
+    * [W3 Schools Javascript Function](https://www.w3schools.com/js/js_functions.asp) 
     * [cookie.html]({{ site.baseurl }}/data/notes/cookie.html) 
